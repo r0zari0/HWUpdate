@@ -13,9 +13,7 @@
 		C3BF7F792883636000A7032E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BF7F772883636000A7032E /* Main.storyboard */; };
 		C3BF7F7B2883636100A7032E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3BF7F7A2883636100A7032E /* Assets.xcassets */; };
 		C3BF7F7E2883636100A7032E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3BF7F7C2883636100A7032E /* LaunchScreen.storyboard */; };
-		C3BF7F892883636100A7032E /* HWUpdateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BF7F882883636100A7032E /* HWUpdateTests.swift */; };
-		C3BF7F932883636100A7032E /* HWUpdateUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BF7F922883636100A7032E /* HWUpdateUITests.swift */; };
-		C3BF7F952883636100A7032E /* HWUpdateUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BF7F942883636100A7032E /* HWUpdateUITestsLaunchTests.swift */; };
+		C3BF7FA628836D6800A7032E /* ChangeColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BF7FA528836D6800A7032E /* ChangeColorVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +43,8 @@
 		C3BF7F7D2883636100A7032E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3BF7F7F2883636100A7032E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C3BF7F842883636100A7032E /* HWUpdateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HWUpdateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3BF7F882883636100A7032E /* HWUpdateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWUpdateTests.swift; sourceTree = "<group>"; };
 		C3BF7F8E2883636100A7032E /* HWUpdateUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HWUpdateUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C3BF7F922883636100A7032E /* HWUpdateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWUpdateUITests.swift; sourceTree = "<group>"; };
-		C3BF7F942883636100A7032E /* HWUpdateUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HWUpdateUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C3BF7FA528836D6800A7032E /* ChangeColorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeColorVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				C3BF7F702883636000A7032E /* HWUpdate */,
-				C3BF7F872883636100A7032E /* HWUpdateTests */,
-				C3BF7F912883636100A7032E /* HWUpdateUITests */,
 				C3BF7F6F2883636000A7032E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,32 +93,48 @@
 		C3BF7F702883636000A7032E /* HWUpdate */ = {
 			isa = PBXGroup;
 			children = (
-				C3BF7F712883636000A7032E /* AppDelegate.swift */,
-				C3BF7F732883636000A7032E /* SceneDelegate.swift */,
-				C3BF7F752883636000A7032E /* ViewController.swift */,
-				C3BF7F772883636000A7032E /* Main.storyboard */,
-				C3BF7F7A2883636100A7032E /* Assets.xcassets */,
-				C3BF7F7C2883636100A7032E /* LaunchScreen.storyboard */,
-				C3BF7F7F2883636100A7032E /* Info.plist */,
+				C3BF7FA328836AC600A7032E /* Support */,
+				C3BF7FA428836B7400A7032E /* ViewControllers */,
+				C3BF7FA12883652500A7032E /* Storyboards */,
+				C3BF7FA22883656100A7032E /* Source */,
 			);
 			path = HWUpdate;
 			sourceTree = "<group>";
 		};
-		C3BF7F872883636100A7032E /* HWUpdateTests */ = {
+		C3BF7FA12883652500A7032E /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				C3BF7F882883636100A7032E /* HWUpdateTests.swift */,
+				C3BF7F772883636000A7032E /* Main.storyboard */,
+				C3BF7F7C2883636100A7032E /* LaunchScreen.storyboard */,
 			);
-			path = HWUpdateTests;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		C3BF7F912883636100A7032E /* HWUpdateUITests */ = {
+		C3BF7FA22883656100A7032E /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				C3BF7F922883636100A7032E /* HWUpdateUITests.swift */,
-				C3BF7F942883636100A7032E /* HWUpdateUITestsLaunchTests.swift */,
+				C3BF7F7A2883636100A7032E /* Assets.xcassets */,
 			);
-			path = HWUpdateUITests;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C3BF7FA328836AC600A7032E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				C3BF7F712883636000A7032E /* AppDelegate.swift */,
+				C3BF7F732883636000A7032E /* SceneDelegate.swift */,
+				C3BF7F7F2883636100A7032E /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		C3BF7FA428836B7400A7032E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C3BF7F752883636000A7032E /* ViewController.swift */,
+				C3BF7FA528836D6800A7032E /* ChangeColorVC.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3BF7FA628836D6800A7032E /* ChangeColorVC.swift in Sources */,
 				C3BF7F762883636000A7032E /* ViewController.swift in Sources */,
 				C3BF7F722883636000A7032E /* AppDelegate.swift in Sources */,
 				C3BF7F742883636000A7032E /* SceneDelegate.swift in Sources */,
@@ -268,7 +279,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3BF7F892883636100A7032E /* HWUpdateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +286,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3BF7F952883636100A7032E /* HWUpdateUITestsLaunchTests.swift in Sources */,
-				C3BF7F932883636100A7032E /* HWUpdateUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,7 +447,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U2226ARBD7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HWUpdate/Info.plist;
+				INFOPLIST_FILE = HWUpdate/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -467,7 +475,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U2226ARBD7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = HWUpdate/Info.plist;
+				INFOPLIST_FILE = HWUpdate/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
